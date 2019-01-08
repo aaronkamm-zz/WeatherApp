@@ -1,11 +1,15 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import Titles from './components/Titles.js';
+import Form from './components/Form.js';
+import Weather from './components/Weather.js'
 
 class App extends React.Component {
   render(){
     return (
       <div>
-        <p>Go away</p>
+        <Titles />
+        <Form />
+        <Weather />
       </div>
     )
   }
