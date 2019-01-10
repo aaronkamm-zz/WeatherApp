@@ -10,14 +10,31 @@ class App extends React.Component {
   constructor(props){
     super(props);
     this.getWeather = this.getWeather.bind(this);
+    this.state = {
+      temperature: undefined,
+      city: undefined,
+      country: undefined,
+      humidity: undefined,
+      description: undefined,
+      error: undefined
+    };
   }
-
+  
   async getWeather(e) {
     e.preventDefault();
     const zip = e.target.elements.zip.value.trim();
     const res = await fetch(`https://api.openweathermap.org/data/2.5/weather?zip=${zip},us&appid=${apiKey}&units=imperial`);
     const data = await res.json();
     console.log(data);
+    console.log(data.weather[0].description)
+    this.setState({
+      temperature: data.main.temp,
+      city: data.name,
+      country: data.sys.country,
+      humidity: data.main.humidity,
+      description: data.weather[0].description,
+      error: "",
+    })
   }
   
   render(){
