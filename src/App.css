@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700');
+
+body {
+    font-family: 'Roboto';
+    background: url('./img/clouds.jpg') no-repeat center;
+}
+
+button {
+    background-color: #f16051;
+    color: #fff;
+    margin: 0 30px;
+}
+
+
+.weather {
+    margin-top: 20px;
+    background-image: linear-gradient(gray);
+}
+
+.wrapper {
+    background-image: linear-gradient(to right, #fffbd5, #b20a2c);
+    opacity: .8;
+
+    
+}
