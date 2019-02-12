@@ -37,7 +37,6 @@ class App extends React.Component {
         description: data.weather[0].description,
         error: ''
       })
-      
     }
     catch(err) {
       console.log("failed fetch fafsf", err)
@@ -54,17 +53,16 @@ class App extends React.Component {
   
   render(){
     return (
-      <div>
-        <div className="wrapper">
-          <div className="main">
-            <div className="container">
-              <div className="row">
+      <div className = "main">
+        <div className = "wrapper">
+            <div className = "container">
+              <div className = "row">
                 <div className = "col-xs-5 titles">
                   <Titles />
                 </div>
                 <div className = "col-xs-7 weather">
                   <Form getWeather = {this.getWeather} />
-                  <Weather 
+                  <Weather
                     temperature = {this.state.temperature} 
                     city = {this.state.city} 
                     country = {this.state.country} 
@@ -72,7 +70,6 @@ class App extends React.Component {
                     description = {this.state.description}
                     error = {this.state.error}
                   />
-                </div>
               </div>
             </div>
           </div>

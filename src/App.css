@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700');
-
+/* @import url('https://fonts.googleapis.com/css?family=Abel" rel="stylesheet') */ */
 body {
     font-family: 'Roboto';
-    background: url('./img/clouds.jpg') no-repeat center;
+    /* background: url('./img/clouds.jpg') no-repeat center; */
+    background: url(./img/mountainrange.jpg) no-repeat center;
+    background-size: cover;
 }
 
 button {
@@ -12,14 +14,38 @@ button {
 }
 
 
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
 .weather {
+    /* line-height: 45px; */
     margin-top: 20px;
-    background-image: linear-gradient(gray);
+    height: 250px;
+}
+.weatherInfo {
+    font-size: 20px;
+
+}
+.content {
+    line-height: 100px;
+}
+
+
+.titles{
+    height: 250px;
+    /* display: flex;
+    justify-content: center; */
+    color: #ffffff;
 }
 
 .wrapper {
-    background-image: linear-gradient(to right, #fffbd5, #b20a2c);
+    /* background-image: linear-gradient(to right, #fffbd5, #b20a2c); */
     opacity: .8;
-
-    
+    background-image: linear-gradient(to right, #00416a, #e4e5e6);
+    height: 250px;
 }

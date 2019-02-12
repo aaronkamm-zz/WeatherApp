@@ -3,7 +3,7 @@ import React from 'react';
 class Weather extends React.Component {
     render(){
         return(
-            <div>
+            <div className = "weatherInfo">
                 {(this.props.temperature) && <div>The temperature is: {this.props.temperature}</div>}
                 {(this.props.city && this.props.country) && <div>Location: {this.props.city}, {this.props.country} </div>}
                 {(this.props.humidity) && <div>Humidity: {this.props.humidity}</div>}
